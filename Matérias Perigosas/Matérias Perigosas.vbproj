@@ -1,0 +1,433 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{19F771CC-7F09-4A2D-A177-4A2E0EF34B1E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>app.My.MyApplication</StartupObject>
+    <RootNamespace>app</RootNamespace>
+    <AssemblyName>Matérias Perigosas</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Carlos\Desktop\Quiz\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>5</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>false</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+    <BootstrapperComponentsUrl>C:\Users\Carlos\Desktop\Quiz\extra_apps</BootstrapperComponentsUrl>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Matérias Perigosas.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Matérias Perigosas.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Text</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>B833AB42FC35BACF859C7589D875833416985D32</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Matérias Perigosas_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xaml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="UIAutomationProvider">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WindowsFormsIntegration">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.vb">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="UserControl1.Designer.vb">
+      <DependentUpon>UserControl1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl10.Designer.vb">
+      <DependentUpon>UserControl10.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl10.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl11.Designer.vb">
+      <DependentUpon>UserControl11.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl11.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl12.Designer.vb">
+      <DependentUpon>UserControl12.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl12.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl13.Designer.vb">
+      <DependentUpon>UserControl13.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl13.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl14.Designer.vb">
+      <DependentUpon>UserControl14.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl14.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl15.Designer.vb">
+      <DependentUpon>UserControl15.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl15.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl16.Designer.vb">
+      <DependentUpon>UserControl16.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl16.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl17.Designer.vb">
+      <DependentUpon>UserControl17.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl17.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl18.Designer.vb">
+      <DependentUpon>UserControl18.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl18.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl19.Designer.vb">
+      <DependentUpon>UserControl19.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl19.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl2.Designer.vb">
+      <DependentUpon>UserControl2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl2.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl20.Designer.vb">
+      <DependentUpon>UserControl20.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl20.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl3.Designer.vb">
+      <DependentUpon>UserControl3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl3.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl4.Designer.vb">
+      <DependentUpon>UserControl4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl4.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl5.Designer.vb">
+      <DependentUpon>UserControl5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl5.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl6.Designer.vb">
+      <DependentUpon>UserControl6.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl6.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl7.Designer.vb">
+      <DependentUpon>UserControl7.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl7.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl8.Designer.vb">
+      <DependentUpon>UserControl8.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl8.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl9.Designer.vb">
+      <DependentUpon>UserControl9.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl9.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl1.resx">
+      <DependentUpon>UserControl1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl10.resx">
+      <DependentUpon>UserControl10.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl11.resx">
+      <DependentUpon>UserControl11.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl12.resx">
+      <DependentUpon>UserControl12.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl13.resx">
+      <DependentUpon>UserControl13.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl14.resx">
+      <DependentUpon>UserControl14.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl15.resx">
+      <DependentUpon>UserControl15.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl16.resx">
+      <DependentUpon>UserControl16.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl17.resx">
+      <DependentUpon>UserControl17.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl18.resx">
+      <DependentUpon>UserControl18.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl19.resx">
+      <DependentUpon>UserControl19.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl2.resx">
+      <DependentUpon>UserControl2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl20.resx">
+      <DependentUpon>UserControl20.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl3.resx">
+      <DependentUpon>UserControl3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl4.resx">
+      <DependentUpon>UserControl4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl5.resx">
+      <DependentUpon>UserControl5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl6.resx">
+      <DependentUpon>UserControl6.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl7.resx">
+      <DependentUpon>UserControl7.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl8.resx">
+      <DependentUpon>UserControl8.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl9.resx">
+      <DependentUpon>UserControl9.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pontos.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.VisualBasic.PowerPacks.10.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft Visual Basic PowerPacks 10.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
